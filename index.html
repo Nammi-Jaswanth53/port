@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaswanth Nammi - Full Stack Developer Portfolio</title>
+    <meta name="description" content="Full Stack Developer & UI/UX Enthusiast specializing in React, TypeScript, and modern web technologies. View my portfolio of beautiful, functional applications.">
+    <meta name="author" content="Jaswanth Nammi">
+    <meta name="keywords" content="Full Stack Developer, React Developer, TypeScript, UI/UX Design, Portfolio, Web Development">
+    
+    <meta property="og:title" content="Jaswanth Nammi - Full Stack Developer Portfolio">
+    <meta property="og:description" content="Full Stack Developer & UI/UX Enthusiast specializing in React, TypeScript, and modern web technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lovable_dev">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-background"></div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="float-dot dot-1"></div>
+            <div class="float-dot dot-2"></div>
+            <div class="float-dot dot-3"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="hero-content">
+            <div class="hero-inner">
+                <!-- Profile Photo -->
+                <div class="profile-photo-container">
+                    <div class="profile-photo-wrapper">
+                        <img src="src/assets/jaswanth-photo.jpg" alt="Jaswanth Nammi" class="profile-photo">
+                        <div class="profile-overlay"></div>
+                    </div>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">Jaswanth</span><br>
+                    <span class="text-foreground">Nammi</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer & UI/UX Enthusiast</p>
+                <p class="hero-description">
+                    Crafting beautiful, functional, and user-centered digital experiences with modern technologies
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('projects')">
+                        View My Work
+                    </button>
+                    <button class="btn-outline" onclick="scrollToSection('contact')">
+                        Get In Touch
+                    </button>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jaswanth-nammi-94a447318" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m5 3 5.745 3.23a1 1 0 0 1 0 1.74L5 11"/>
+                            <path d="M12 12v5"/>
+                            <path d="M12 7v5"/>
+                            <path d="M19 12h-7"/>
+                        </svg>
+                    </a>
+                    <a href="http://github.com/Nammi-Jaswanth53" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                            <path d="M9 18c-4.51 2-5-2-7-2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <button onclick="scrollToSection('skills')" class="scroll-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13l3 3 7-7"/>
+                    <path d="m21 21-6-6m6 6v-4.8m0 4.8h-4.8"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Skills & Expertise</h2>
+                <p class="section-description">
+                    A comprehensive toolkit for building modern, scalable, and beautiful applications
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <p class="skill-description">React, TypeScript, Next.js, Tailwind CSS</p>
+                    <div class="skill-technologies">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M5 12c0 1.657 3.134 3 7 3s7-1.343 7-3"/>
+                            <path d="M5 5v14c0 1.657 3.134 3 7 3s7-1.343 7-3V5"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Backend Development</h3>
+                    <p class="skill-description">Node.js, Express, MongoDB, PostgreSQL</p>
+                    <div class="skill-technologies">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Web Technologies</h3>
+                    <p class="skill-description">Full-stack web applications & APIs</p>
+                    <div class="skill-technologies">
+                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">WebSockets</span>
+                        <span class="tech-tag">PWA</span>
+                        <span class="tech-tag">SEO</span>
+                        <span class="tech-tag">Web Performance</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect width="16" height="20" x="4" y="2" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Mobile Development</h3>
+                    <p class="skill-description">React Native, responsive design</p>
+                    <div class="skill-technologies">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Expo</span>
+                        <span class="tech-tag">Mobile UI/UX</span>
+                        <span class="tech-tag">Cross-platform</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">UI/UX Design</h3>
+                    <p class="skill-description">User-centered design & prototyping</p>
+                    <div class="skill-technologies">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Adobe XD</span>
+                        <span class="tech-tag">Prototyping</span>
+                        <span class="tech-tag">User Research</span>
+                        <span class="tech-tag">Design Systems</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">DevOps & Tools</h3>
+                    <p class="skill-description">Git, Docker, CI/CD, Cloud platforms</p>
+                    <div class="skill-technologies">
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Vercel</span>
+                        <span class="tech-tag">CI/CD</span>
+                        <span class="tech-tag">Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Featured Projects</h2>
+                <p class="section-description">
+                    A collection of projects that showcase my skills and passion for creating exceptional digital experiences
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80" alt="E-Commerce Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-outline-small" onclick="window.open('#', '_blank')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15,3 21,3 21,9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Live Demo
+                            </button>
+                            <button class="btn-outline-small" onclick="window.open('#', '_blank')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                                </svg>
+                                Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&q=80" alt="Task Management App">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Material-UI</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-outline-small" onclick="window.open('#', '_blank')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15,3 21,3 21,9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Live Demo
+                            </button>
+                            <button class="btn-outline-small" onclick="window.open('#', '_blank')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                                </svg>
+                                Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&q=80" alt="Weather Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-description">
+                            A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">API Integration</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-outline-small" onclick="window.open('#', '_blank')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15,3 21,3 21,9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Live Demo
+                            </button>
+                            <button class="btn-outline-small" onclick="window.open('#', '_blank')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                                </svg>
+                                Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Portfolio Website">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            A modern, responsive portfolio website showcasing projects and skills with smooth animations and optimized performance.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Framer Motion</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-outline-small" onclick="window.open('#', '_blank')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15,3 21,3 21,9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Live Demo
+                            </button>
+                            <button class="btn-outline-small" onclick="window.open('#', '_blank')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                                </svg>
+                                Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611262588024-d12430b98920?w=800&q=80" alt="Social Media App">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Social Media App</h3>
+                        <p class="project-description">
+                            A social networking platform with real-time messaging, post sharing, and user interaction features.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-outline-small" onclick="window.open('#', '_blank')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15,3 21,3 21,9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Live Demo
+                            </button>
+                            <button class="btn-outline-small" onclick="window.open('#', '_blank')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                                </svg>
+                                Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80" alt="Learning Management System">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Learning Management System</h3>
+                        <p class="project-description">
+                            An educational platform with course management, video streaming, progress tracking, and interactive assignments.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Prisma</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">AWS S3</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-outline-small" onclick="window.open('#', '_blank')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15,3 21,3 21,9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Live Demo
+                            </button>
+                            <button class="btn-outline-small" onclick="window.open('#', '_blank')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                                </svg>
+                                Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Let's Work Together</h2>
+                <p class="section-description">
+                    Have a project in mind? I'd love to hear about it and discuss how we can bring your ideas to life.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3 class="contact-title">Get In Touch</h3>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="contact-label">Email</p>
+                                    <p class="contact-value">jaswanthnammi145@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="contact-label">Phone</p>
+                                    <p class="contact-value">+91 9182329227</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="contact-label">Location</p>
+                                    <p class="contact-value">Hyderabad, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social">
+                            <p class="social-label">Follow me on social media</p>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/jaswanth-nammi-94a447318" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m5 3 5.745 3.23a1 1 0 0 1 0 1.74L5 11"/>
+                                        <path d="M12 12v5"/>
+                                        <path d="M12 7v5"/>
+                                        <path d="M19 12h-7"/>
+                                    </svg>
+                                </a>
+                                <a href="http://github.com/Nammi-Jaswanth53" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                                        <path d="M9 18c-4.51 2-5-2-7-2"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="contact-card">
+                        <h3 class="contact-title">Send Message</h3>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" required rows="6" class="form-textarea"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary-full">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                                </svg>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                © 2024 Jaswanth Nammi. Crafted with passion and modern technologies.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <div class="toast-content">
+            <div class="toast-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 6L9 17l-5-5"/>
+                </svg>
+            </div>
+            <div class="toast-message">
+                <div class="toast-title">Message Sent!</div>
+                <div class="toast-description">Thank you for your message. I'll get back to you soon!</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
